@@ -1,28 +1,38 @@
-Tags:
+HTML Tags:
 ===========
 html
 head
+title
 body
-header 
-footer
-div
-table: tr, th, td
+header - its like a div tag: html5
+footer  - its like a div tag: html5
+//Block Level tags
+div, p
+
+//inline tags
 span
 a
+i,b,strong
+
+img-src, alt, height, width
+
+
+ul-type="i"
+ol
+  child tag li
+table: parent tag
+   child tags: tr, th, td
+break tag : br
+
 iframe
-img
-p
-br
-script
+audio/video
+form
+label
+input:text,password,submit,radio, checkbox,hidden,number.
+button
 style
 link
-button
-ul
-ol
-li
-label
-form
-input:text,password,submit,radio, checkbox,hidden,number.
+
 =====================================
 New learning
 ============
