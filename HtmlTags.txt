@@ -1,0 +1,45 @@
+Tags:
+===========
+html
+head
+body
+header 
+footer
+div
+table: tr, th, td
+span
+a
+iframe
+img
+p
+br
+script
+style
+link
+button
+ul
+ol
+li
+label
+form
+input:text,password,submit,radio, checkbox,hidden,number.
+=====================================
+New learning
+============
+  logo icon 
+ 
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
