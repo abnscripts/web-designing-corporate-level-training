@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Jobs</title>
+  <script>
+    function getJobsDetails(job) {
+
+      var url = "";
+      if (job == 'fsd') {
+        url = "fsd.pdf";
+      } else if (job == 'wd') {
+        url = "wd.pdf";
+      } else if (job == 'mad') {
+        url = "mad.pdf";
+      }
+      // To Do : A function to populate url with a valid url from any method you prefer.    
+      // Set an ID for the iframe. Let us give that an id of myframe
+      document.getElementById("myiframe").setAttribute("src", url);
+    }
+
+  </script>
+  <style>
+    body {
+      height: 641px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    header {
+      border: 1px solid red;
+      background-color: pink;
+      height: 100px;
+      text-align: center;
+    }
+
+    .container {
+      height: 441px;
+    }
+
+    .left {
+      background-color: red;
+      width: 40%;
+      display: inline-block;
+      height: 441px;
+
+      text-align: center;
+
+    }
+
+    .menu {
+      background-color: rgb(100, 231, 39);
+      width: 10%;
+
+      height: 441px;
+      float: left;
+
+
+    }
+
+    .leftULlist {
+      text-align: center;
+    }
+
+    .fontcolor {
+      color: black;
+      text-align: center;
+    }
+
+    .right {
+      width: 50%;
+      background-color: blueviolet;
+      height: 441px;
+      float: right;
+
+    }
+
+    footer {
+      border: 1px solid PINK;
+      background-color: white;
+      height: 100px;
+    }
+
+    .logo {
+      display: inline;
+      width: 10%;
+    }
+
+    .logo>img {
+      margin-top: 12px;
+    }
+
+    .title {
+      width: 90%;
+      float: right;
+      margin-top: 10px;
+
+    }
+  .menu li{
+      list-style-type: none;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img height="40" width="120" src="abnlogo.PNG">
+    </div>
+    <div class="title">
+      WEL COME TO ABN SCRIPTS
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="menu">
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="aboutUs.html">ABOUT US</a> </li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="job.html">Jobs</a></li>
+      </ul>
+
+    </div>
+
+    <div class="left">
+      ABN SCRIPTS TECHNOLOGY
+      <iframe id="myiframe" src="fsd.pdf" height="400" width="450"></iframe>
+
+    </div>
+    <div class="right">
+      <h2> Jobs</h2>
+      <hr>
+      <ol>
+        <li onclick="getJobsDetails('fsd')">Full Stack Developer</li>
+        <li onclick="getJobsDetails('wd')">Web Designer</li>
+        <li onclick="getJobsDetails('mad')">Mobile App Developer</li>
+
+        <li>SAP Consultant</li>
+        <li>Tester</li>
+        <li>HR</li>
+
+      </ol>
+
+
+
+    </div>
+  </div>
+
+  </div>
+  </div>
+  <footer>
+    <span>Office Address:ABNScripts,201,2nd floor,Royal 18,Dange Chowk,Behind Mayureshwar Ganesh
+      Mandir,Thergaon,Pune-444003
+    </span>
+  </footer>
+</body>
+
+</html>

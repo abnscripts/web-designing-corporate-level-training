@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <Title>HTML Tags</Title>  
+     <link rel="stylesheet" href="mystyle.css"/>       
+     
+     <script>
+
+          function eventHandlerFirstName()
+         {
+            let getFirstName=document.getElementById("txtFirstName").value;
+            
+            alert("On Blur /on change First Name: "+getFirstName)
+         }
+
+         function showMessage(){
+            //validate mobile number
+            //save data in db
+
+            let getFirstName=document.getElementById("txtFirstName").value;
+            let lastName=document.getElementById("lname").value;
+            let genders= document.getElementsByName("gender");
+            let sb=document.getElementById("sb").value;
+            let cb=document.getElementById("cb").value;
+            let userGender="";
+            console.log("genders : "+genders)
+
+            genders.forEach((gender) => {
+                if (gender.checked) {
+                    userGender =gender.value;
+                }
+            })
+          
+            alert(
+              "OnSubmit : FirstName: "+getFirstName+
+              " ,Last Name: "+ lastName+" Gender :"+userGender
+              +" ,email : "+getemail +            
+              " Bank1 :"+sb+
+              " Bank2 : "+cb
+              );
+             
+         }
+        
+     </script>
+ </head>
+ <body>
+     
+<hr>
+     <h1 style="color: blue;">Welcome to ABNScript</h1>
+     <h2>I am H2</h2>
+     <h6>I am H6</h6>
+     
+<hr>
+     <marquee direction="right">Hi</marquee>
+     <p class="c3">asfkjsadfbasdklj
+         sklfadsklfjsad sfasdf asdfasdfasdfasdfasdf as sdfasf</p>    
+
+      <p class="c3">vijay asdfasdfasdf
+          safasdfasdf
+          asfkjsadfbasdklj
+          safasdf
+      </p>
+      <p class="c3">vijay asdfasdfasdf
+        safasdfasdf
+        asfkjsadfbasdklj
+        safasdf
+    </p>
+<hr>
+         <span>ABNScript</span> 
+
+         <span>Technology</span>
+
+         <div>Block1</div> <div>Block2</div>
+
+<hr>
+     <table border="1">
+         <tr>            
+              <th>Name</th>
+              <th>Mobile No</th>
+              <th>Address</th>
+          </tr>
+           <tr>
+               <td>Vijay</td>
+               <td>98898867</td>
+               <td>Pune</td>
+           </tr>
+           <tr>
+            <td>Rushi</td>
+            <td>868768787</td>
+            <td>Pune</td>
+        </tr>
+        <tr>
+            <td>Akash</td>
+            <td>4324232</td>
+            <td>Pune</td>
+        </tr>
+        <tr>
+            <td>Sagar</td>
+            <td>989898989</td>
+            <td>Pune</td>
+        </tr>
+        <tr>
+            <td>Vijay</td>
+            <td>98898867</td>
+            <td>Pune</td>
+        </tr>
+        <tr>
+         <td>Rushi</td>
+         <td>868768787</td>
+         <td>Pune</td>
+     </tr>
+     <tr>
+         <td>Akash</td>
+         <td>4324232</td>
+         <td>Pune</td>
+     </tr>
+     <tr style="background-color: rgb(184, 214, 129);">
+         <td>Sagar</td>
+         <td>989898989</td>
+         <td>Pune</td>
+     </tr>
+        
+           
+
+          
+         </table>
+
+         <hr>
+         <div>
+            <span>Form</span>
+                <form action="#">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="txtFirstName" value="" name="txtFirstName" onblur="eventHandlerFirstName()" ><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value=""><br>
+                    <label for="mobile">Mobile:</label><br>
+                    <input type="number" id="mobile" name="mobile" value=""><br><br>                  
+                    <label for="mobile">Resume:</label><br>                    
+                    <input type="file">
+                   <div>
+                    <label for="fname">Gender:</label><br>
+                    <label>Male</Label><input type="radio" name="gender"  value="male">
+                    <label>Female</label><input type="radio" name="gender"  value="female">
+                   </div>
+                   <div>
+                   
+                   
+                    <label>ans2</label><input type="radio" name="ans" value="b">
+                    <label>ans3</Label><input type="radio" name="ans" value="c">
+                    <label>ans4</label><input type="radio" name="ans" value="d">
+                   </div>
+                   <div>
+                    <label for="fname">Account Type:</label><br>
+                   <label>Saving</label> <input type="checkbox" name="saving" value='saving'>
+                   <label>Current</label> <input type="checkbox" name="current" value='current'>
+                  </div>
+                  <div>
+                   
+                
+                    <input type="button" value="Action">
+
+                </div>
+                    <div>
+                    <label for="fname">Email:</label><br>
+                    <input type="email" value="">
+
+                    </div>
+                    <label for="fname">address:</label><br>               
+                    <textarea aria-multiline="true">
+                    </textarea>
+                    <br>
+                    <label>LI tags</label>
+
+                    <ul>
+                         <li>item1</li>
+                         <li>item2</li>
+                         <li>item3</li>
+                         <li>item4</li>
+                    </ul>
+                    <label for="fname">What is the addition of 10+2</label><br>
+                    <ol type="A">
+                        <li> <label>102</Label><input type="radio" name="ans" value="102"> </li>
+                        <li> <label>10</Label><input type="radio" name="ans" value="10"></li>
+                        <li> <label>11</Label><input type="radio" name="ans" value="11"></li>
+                        <li> <label>12</Label><input type="radio" name="ans" value="12"></li>
+                   </ol>
+                    <input type="submit" value="Submit" onclick="showMessage()">
+                </form> 
+
+         </div>
+ </body>
+
+</html>

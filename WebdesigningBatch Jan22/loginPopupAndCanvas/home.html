@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HOME</title>
+  <link rel="stylesheet" href="app.css">
+  <style>
+    body {
+      height: 641px;
+      margin-left: 50px;
+      margin-right: 50px;
+      width: 100%;
+    }
+
+    header {
+      border: 1px solid red;
+      background-color: pink;
+      height: 100px;
+      text-align: center;
+    }
+
+    .container {
+      height: 441px;
+    }
+
+    .left {
+      background-color: red;
+      width: 40%;
+      display: inline-block;
+      height: 441px;
+     
+      text-align: center;
+
+    }
+    .menu {
+      background-color: rgb(100, 231, 39);
+      width: 10%;
+     
+      height: 441px;
+     float: left;
+    
+
+    }
+
+    .leftULlist {
+      text-align: left;
+    }
+
+    .fontcolor {
+      color: black;
+      text-align: center;
+    }
+
+    .right {
+      width: 50%;
+      background-color: blueviolet;
+      height: 441px;
+      float: right;
+    }
+
+    footer {
+      border: 1px solid white;
+      background-color:wheat;
+      height: 100px;
+    }
+
+  .logo{
+    display: inline;
+    width: 10%;      
+   }
+
+   .logo > img{
+    margin-top: 12px; 
+   }
+    .title{
+      width: 90%;
+      float: right;       
+      margin-top: 10px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <header>
+
+    <div class="logo">
+      <img height="40" width="120" src="abnlogo.PNG">     
+    </div>
+    <div class="title">
+      WELCOME <a href="login.html">Login</a>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div class="menu">
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="aboutUs.html">ABOUT US</a> </li>
+        <li><a href="services.html">SERVICES</a></li>  
+        <li><a href="job.html">Jobs</a></li>        
+      </ul>
+
+    </div>
+
+    <div class="left">
+      ABN SCRIPTS TECHNOLOGY
+      <iframe src="http://www.abnscripts.com"></iframe>
+
+    </div>
+    <div class="right">
+      <h2> ABN SCRIPTS SERVICES</h2>
+      <ul>
+        <li>Full Stack Devlopement</li>
+        <li>Web Designing</li>
+        <li>Mobile App Developement</li>
+        <li>SAP Solutions</li>
+        <li>IT Consulting And Placement</li>
+        <li>Outscouring</li>
+        <li>IT Training</li>
+        <li>Software testing</li>
+      </ul>
+      <hr>
+  
+      <UL class="rightULlist">
+        <li>PHP Full Stack Development</li>
+        <li>JAVA Full Stack Development</li>
+        <li> NET Full Stack Development </li>
+        <li>MEAN Stack Development </li>
+      </UL>
+    </div>
+  </div>
+ 
+  </div>
+  </div>
+  <div id="login">
+    <h3>LOGIN</h3>
+    <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="usename" placeholder="Enter Username">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="username" placeholder="Enter Password">
+
+      <input type="submit" value="Submit">
+    </form>
+</div>
+  <footer>
+    <span>Office Address:ABNScripts,201,2nd floor,Royal 18,Dange Chowk,Behind Mayureshwar Ganesh Mandir,Thergaon,Pune-444003
+  </footer>
+</body>
+
+</html>

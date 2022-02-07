@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>
+        HTML Practice
+    </title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <!--IM Comment I will not be visible on the screen-->
+    <!--
+        html tag syntax
+       <tag_name property_name="value">Content</tag_name>
+        //HTML TAGS
+        1. <div>
+        2. <table> // table is parent tag
+            //other tag should not be here
+             <tr>                 
+                 <th>heading</th> // child tag
+            </tr>  
+             <tr>
+                 <td><span>Employee name</span></td> //child tag
+            </tr> 
+          </table>
+        3. <p>
+        4. <span>
+        5  <img>
+        6. <ul> // ul/ol is parent tag      
+                   //other tags should not be here
+                 <li><p>sfasfdas</p> </li>  // this child tag of ul
+           </ul> 
+
+// how to assign properties to a tag in html
+ //For Example
+
+ 1. <div id="container"></div> // here id is property and container is value of id hence name of id is container
+ 2. <div class="menu"></div> //here class is a property and menu is value of that class hence name of class is menu
+ 3. <input type="text" value="vijay" id="firstName"> // here type, value , id are properties of input tag
+
+
+// Task : Design a login window at the center
+
+      username: input
+      password : input
+
+      Submit button
+      
+    
+
+    -->
+   
+    <div id="login">
+        <h3>LOGIN</h3>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="usename" placeholder="Enter Username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="username" placeholder="Enter Password">
+
+          <input type="submit" value="Submit">
+        </form>
+        
+        <div>
+            <a href="registration.html">Sign Up</a>
+        </div>
+    </div>
+   
+
+</body>
+
+</html>

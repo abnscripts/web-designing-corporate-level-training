@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my data</title>
+        <script>
+
+            function abcd()
+           {
+              let getFirstName;
+
+              getFirstName= document.getElementById("txtFirstName").value;
+
+              let   getMiddleEName=document.getElementById("txtMiddleName").value;
+
+              let   lname=document.getElementById("lname").value;
+
+              alert("On Blur,  First Name: "+getFirstName+
+                   " Middle Name: "+getMiddleEName+" Lname: "+lname);
+        
+           }
+  
+           function showMessage(){
+              //validate mobile number
+              //save data in db
+  
+              let getFirstName= document.getElementById("txtFirstName").value;
+              let lastName=document.getElementById("lname").value;
+              let genders= document.getElementsByName("gender");
+              let getemail=document.getElementById("email").value;
+              let getAddress=document.getElementById("address").value;
+              let getMobile=document.getElementById("mobile").value;
+              let sb=document.getElementById("sb").value;
+              let cb=document.getElementById("cb").value;
+
+            let userGender="";
+
+            genders.forEach((gender)=>{
+                  if (gender.checked) {
+                      userGender =gender.value;
+                  }
+              })
+  
+             
+            
+              alert(
+              "OnSubmit : FirstName: "+getFirstName+
+              " ,Last Name: "+ lastName+" Gender :"+userGender
+              +" ,email : "+getemail +
+              " Address: "+getAddress+
+              " Mobile: "+getMobile+
+              " state bank :"+sb+
+              " central bank : "+cb
+              );
+              
+               
+           }
+          
+       </script>
+    </head>
+<body>
+<h1>My First heading</h1>
+<p>MY first paragarph.</p>
+<table border="1">
+            <tr><th>ID</th>
+                <th>NAME</th>
+                <th>MO NO</th>
+                <th>CLASS</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <TD>SAGAR</TD>
+                <TD>77777777777</TD>
+                <TD>BSC</TD>
+            </tr>
+                <td>2</td>
+                <TD>RUSHU</TD>
+                <TD>11111111111</TD>
+                <TD>BSC</TD>
+            </TR>
+
+           </TR>
+                <td>3</td>
+                <TD>GANESH</TD>
+                <TD>77777777777</TD>
+                <TD>BSC</TD>
+           </TR>
+           <h2>"backgruond image"</h2>
+           <p>A backgruond image for a div element:</p>
+           <p><b>this is bold</b></p>
+           <p><b>this is italic</b></p>
+           <h3>An unorderlist HTML List</h3>
+           <u1>
+               <Li>Coffee</Li>
+               <Li>Tea</Li>
+               <Li>milk</Li>
+            </u1>    
+           <h3>An unorderlist</h3>
+           <u1>
+               <Li>Coffee</Li>
+               <Li>Tea</Li>
+               <Li>milk</Li>
+            </u1>    
+</table>
+<hr>
+<div>
+    <label for="name">First name:</label><br>
+    <input type="text" id="txtFirstName" value="" name="txtFirstName"><br>
+    <label for="Mname">Middle name:</lable><br>
+    <input type="text" id="txtMiddleName" value="" name="middlename"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"value="" onblur="abcd()"><br>
+    <label for="mobile">Mobile:</label><br>
+    <input type="number" id="mobile" name="mobile" value=""><br>
+    <label for="email">email:</label><br>
+    <input type="email" id="email" name="email" value=""><br><br>                  
+    <label for="Address">Address:</label>
+    <textarea  id="address" name="Address"></textarea>
+
+    <br>                     
+    <input type="file">
+    <br>
+    <br>
+<div>
+     <div><label>Gender:</label></div>
+     <label>Male</label><input type="radio"name="gender" value="male">
+     <label>Female</label><input type="radio"name="gender" value="Female">
+     </div> 
+     <br>                 
+<div>
+    <label>ans1</label><input type="radio" name="ans" value="A"><br>
+    <lable>ans2</lable><input type="radio" name="ans" value="B"><br>
+    <lable>ans3</lable><input type="radio" name="ans" value="c"><br>
+</div>
+<br>
+
+ </div>
+<div>
+    <lable for="name">Bank type:</label><br>
+    <label>state bank</label><input type="checkbox" name="bank" value="state bank">
+    <label>central bank</label><input type="checkbox" name="bank" value="central">
+</div>
+<br>
+    <input type="submit" value="Submit" onclick="showMessage()">
+
+</body>
+</html>
+  

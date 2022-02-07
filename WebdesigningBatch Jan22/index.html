@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+      .heading{color: brown;
+        text-align: center;    
+        }
+
+      .formCls{
+        background-color: rgb(204, 231, 178);
+        color:blue ;
+        height:100%;
+        width: 500px;
+        text-align: center;
+        margin-left: 400px;  
+        border-style: double;
+        border-radius: 10px;
+        border: 2px solid red;
+      }
+      .pcls
+      {
+        color: green;
+      }
+      .formInput{
+          margin-top: 10px;
+      }
+   </style>
+   <script>
+       //Called when clicked on submit button
+       function showMessage(){
+          alert("Hi There");
+       }
+       //called when key event occur press/up
+       function eventFuntion(){
+          alert("Hi There you called KEY event function" );
+       }
+
+       //called when mouse event occur
+       function mouseEventFuntion(){
+          alert("Hi There you called MOUSE event function" );
+       }
+       
+   </script>
+</head>
+<body>
+    <h1 class="heading">Employee Details</h1>
+    <div class="formCls">
+        ABNScripts <span class="pcls">  Technologies </span>
+        <form name="empForm" style="margin-top:15px">
+            <div class="formInput">
+                <label>First Name: </label>
+                <input type="text" name="fname" id="fname" onkeypress="eventFuntion()" >
+            </div>
+            <div class="formInput">
+                <label>Last Name: </label>
+                <input type="text" name="lname" id="lname" onkeyup="eventFuntion()">
+            </div>
+            <div class="formInput">
+                <label>Mobile No. :  </label>
+                <input type="text" name="mobileNo" id="mobileNo" onmousedown="mouseEventFuntion()" onmousemove="mouseEventFuntion()">
+            </div>
+            <div class="formInput">               
+                <input type="button" value="SingleClickTest" onclick="showMessage()" onmousemove="mouseEventFuntion()">  
+                <input type="button" value="DBLClickTest" ondblclick="showMessage()" >  
+            </div>
+            <div class="formInput">               
+                <a href="www.google.com" onmousemove="mouseEventFuntion()">Hey!! Google</a>
+            </div>
+
+
+            <div class="formInput">
+                <label>onmouseout :  </label>
+                <input type="text" name="mobileNo" id="mobileNo" onmouseout="mouseEventFuntion()">
+            </div>
+
+
+            <div class="formInput">
+                <label>onmouseover :  </label>
+                <input type="text" name="mobileNo" id="mobileNo" onmouseover="mouseEventFuntion()">
+                <div  >On mouse over</div>
+            </div>
+
+
+            <div class="formInput">
+                <label>onmouseup  </label>
+                <input type="text" name="mobileNo" id="mobileNo" onmouseup="mouseEventFuntion()">
+            </div>
+
+            <div class="formInput">
+                <label>onmousewheel  </label>
+                <input type="text" name="mobileNo" id="mobileNo" onmousewheel="mouseEventFuntion()">
+            </div>
+
+            <div class="formInput">
+                <label>onwheel :  </label>
+                <input type="text" name="mobileNo" id="mobileNo" onwheel="mouseEventFuntion()">
+            </div>
+
+
+
+
+
+
+
+
+        </form>
+    </div>
+</body>
+</html>

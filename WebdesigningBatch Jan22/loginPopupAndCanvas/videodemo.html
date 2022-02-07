@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <title>Video tag demo</title>
+    <meta charset=utf-8>
+    <style>
+       video,  div{
+            width:400px;
+            height: auto;
+            border: 1px solid green; 
+            background-color: tomato;  
+            margin: 50px 300px;
+        }
+    </style>
+</head>
+<body>
+<h1 style="color: green;">Video tag demo</h1>
+    <!--
+      Video and audio tags are introduced in html5
+      properties: src,height, width, onwaiting , part , poster, title , preload, role
+      controls, autoplay
+    
+    -->
+
+<video autoplay="true" height="300px" title="earth" controls>
+    <source src="videodemo1.mp4" type="video/mp4">   
+    <source src="videodemo2.mp4"type="video/mp4">  
+    Your browser does not support the video tag.  
+</video>
+<div>
+    <h1>Audio Tag</h1>
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+</div>
+
+<div>
+    <iframe height="480"  
+    src="https://www.youtube.com/embed/il_t1WVLNxk/AS_dAPN1Dlk?playlist=AfxHGNRtFac&loop=1&controls=1">
+</iframe>      
+</div>
+</body>
+
+</html>

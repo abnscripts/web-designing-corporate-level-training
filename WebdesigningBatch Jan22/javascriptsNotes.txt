@@ -1,0 +1,33 @@
+
+29/12/21
+===================
+Javascript
+
+//variable delcaration with initailization
+
+  let fname = document.getElementById("txtFirstName").value;
+  let lname= document.getElementById("lname").value;
+
+
+Javascript events:
+
+=====================
+ 
+
+onblur: once mouse focus got changed
+
+onchange: if value of element got changed
+
+onclick: once click on button
+
+onselect: once select the value of dropdown
+
+
+=============================================
+
+
+
+
+
+
+

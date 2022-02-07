@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>     
+  <link rel="stylesheet" href="app.css">
+  <script>
+    function  showCity(){
+      var  city = document.getElementById("city").value;   
+      alert("Selected city is  "+city);
+    }
+  </script>
+</head>
+<body>
+
+  <div id="register">
+    <form action="www.abnscripts.com/api/saveDetails" method="post">
+
+        <img class="ABNlogo" src="abnlogo.PNG" height="30px" width="100px" alt=""/>
+  
+      <h3 class="ABNHEAD">Registration Form</h3>
+  
+      <label for="fname">First Name</label>
+      
+      <input type="text" id="firstName" name="firstName" placeholder="First Name">
+  
+      <label for="Username">Last Name</label>
+      <input type="text" id="lname" name="lname" placeholder="Last Name">
+  
+      <label for="Username">Mobile Number</label>
+      <input type="text" id="Mobile" name="Username" placeholder="Mobile Number">
+       
+      <label for="Username">Username or Email address</label>
+      <input type="text" id="sdafsa" name="Username" placeholder="Username">
+      <i class="fa fa-envelope icon"></i>
+  
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Password">
+  
+      <label for="Username">Confirm Password</label>
+      <input type="password" id="Username" name="Username" placeholder="Password">
+
+      <label>City :</label>
+
+      <select id="city" onchange="showCity()">
+        <option value="mumbai">Mumbai</option>
+        <option value="pune">Pune</option>
+        <option value="banglore">Banglore</option>
+      </select>
+
+      
+
+      <input type="submit" value="Register">
+                 <a class="sign" href="login.html"> or LOGIN</a>
+    </form>
+  </div>
+  
+</body>
+</html>
+
+
+    

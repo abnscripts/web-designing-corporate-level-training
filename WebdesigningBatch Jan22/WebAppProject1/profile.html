@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>Profile Details</title>      
+   </head>
+   <script>
+       const urlParams = new URLSearchParams(window.location.search);
+     
+       const firstName = urlParams.get('firstName');
+       const lastName = urlParams.get('lastName');
+       const mobile = urlParams.get('mobile');
+       const email = urlParams.get('email');
+       const password = urlParams.get("password");
+       const city = urlParams.get('city');
+       
+       console.log(firstName,lastName,mobile,email,password,city);
+   </script>
+<body>
+    <div style="margin-left: 441px; text-align: center;height: 100px; width: 400px; background-color: green;">
+        <h1>Employee Profile</h1>        
+        <table border="1"  style="background-color: yellow;height: 200px; width: 300px;">
+            <tr>
+                <th>Fields</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>First Name : </td>
+                <td><script>document.write(firstName)</script></td>
+            </tr>
+            <tr>
+                <td>Last Name : </td>
+                <td><script>document.write(lastName)</script></td>
+            </tr>
+            <tr>
+                <td>Mobile Number </td>
+                <td><script>document.write(mobile)</script></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td> <script>document.write(email)</script></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+    <!--HTML = Hyper Text Markup Language-->
+
+</html>
+   
