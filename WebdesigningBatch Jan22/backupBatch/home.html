@@ -6,11 +6,14 @@
         </title>
         <script>
              function submitForm(){
-                 alert("Details submitted successfully..!!!");
+                 var timeOfClock=1200;
+                 var actualTimeFormat=timeOfClock; //12:00
+                 alert(actualTimeFormat);
+                 //alert("Details submitted successfully..!!!");
              }
         </script>
         <style>
-            
+            label{}
         </style>
     </head>
     <body>
@@ -222,47 +225,81 @@ desktop publishing software like Aldus PageMaker including versions of Lorem Ips
             number.
         script -used for java scripts-->
 <hr>
-        <div  style="background-color: yellow; width: 400px;height: 600px;margin-left: 300px;">
-               <form>
-                   <div>
-                     <label>First Name</label>
-                    <input type="text" id="firstName" name="firstName" value="">
-                 </div>
-               <div style="margin-top: 10px;">
-                  <label>Last Name</label>
-                  <input type="text" id="lastName" name="lastName" value="">
-                </div>
-                <div style="margin-top: 10px;">
-                    <label>Mobile</label>
-                    <input type="text" id="mobile" name="mobile" value="">
-                  </div>
-                  <div style="margin-top: 10px;">
-                    <label>Email</label>
-                    <input type="text" id="email" name="email" value="">
-                  </div>
-                  <div style="margin-top: 10px;">
-                    <label>Address </label>
-                    <input type="text" id="address" name="address" value="">
-                  </div>
-                  <div style="margin-top: 10px;">
-                    <label>Gender>></label>
-                    <label>Male: </label><input type="radio" id="male" name="gender" value="Male">
-                    <label>Female: </label><input type="radio" id="female" name="gender" value="Female">
-                  </div>
-                  <div style="margin-top: 10px;">
-                    <label>Education</label>
-                    <label>BSC: </label><input type="checkbox" id="bsc" name="edu" value="bsc">
-                    <label>MSC: </label><input type="checkbox" id="msc" name="edu" value="msc">
-                  </div>
+        <div  style="background-color: yellow; width: 400px;height: auto; margin: 100px 100px;">
+               <form style="padding: 20px 20px;">
+                    <div>
+                        <label>First Name</label>
+                        <input type="text" id="firstName" name="firstName" value="Vijay">
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <label>Last Name</label>
+                        <input type="text" id="lastName" name="lastName" value="">
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <label>Mobile</label>
+                        <input type="text" id="mobile" name="mobile" value="">
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <label>Email</label>
+                        <input type="text" id="email" name="email" value="">
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <label>City </label>
+                        <select>
+                                <option>Pune</option>
+                                <option>Mumbai</option>
+                                <option>Delhi</option>                              
+
+                        </select>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <label>Address </label>
+                        <textarea>Chinchwad</textarea>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <label>Gender>></label>
+                        <label>Male: </label><input type="radio" id="male" name="gender" value="Male">
+                        <label>Female: </label><input type="radio" id="female" name="gender" value="Female">
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <label>Education</label>
+                        <label>BSC: </label><input type="checkbox" id="bsc" name="edu" value="bsc">
+                        <label>MSC: </label><input type="checkbox" id="msc" name="edu" value="msc">
+                    </div>
+                            
                 <div>
-                    <button  onclick="submitForm()">Submit</button>
-                </div>  
-                   
-                
+                    <!--All Types Of Input tag-->
+                    <h3>All Types Of Input tag</h3>
+
+                    <input type="button" value="Click Me"> <br>            
+                    <input type="color"><br>
+                    <input type="date"> <br>
+                    <input type="datetime-local"> <br>
+                    <input type="email"> <br>
+                   Resume <input type="file"> <br>
+                    Hidden : OTP : <input type="hidden" value="645656"> <br>
+                    <input type="image"> user img tag instead of this<br>
+                    
+                    <input type="month"> <br>
+                   Number type:  <input type="number"><br>
+                    Password: <input type="password"> <br>                   
+                    <input type="range"> <br>
+                    <input type="reset"> <br>
+                    Search: <input type="search"> <br>            
+                    <input type="tel"> <br>             
+                    <input type="time"> <br>
+                    <input type="url"> <br>
+                    <input type="week">
+
+                </div>
+                <div>
+                    <input type="submit" onclick="submitForm()">
+                    <button>EDIT</button>
+                    <button>Send Message</button>
+                </div>
                </form>
-                   
- 
-        </div>    
+            
+            </div>    
 
 
     </body>
