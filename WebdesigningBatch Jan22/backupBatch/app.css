@@ -1,0 +1,25 @@
+.ext{
+  color:white;
+}
+#myId{
+    color: yellow;
+}
+body {
+    margin: 100px 100px 100px 100px;
+    background-image: url(images/ContactImage.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Lucida Console", "Courier New", monospace;
+   
+  }
+p{color: greenyellow !important;}
+#abcd{
+    color: blue;
+    background-color:azure;
+    margin: 50px 30px;
+    padding: 20px;
+    border: 4px solid red;
+    border-radius: 20px;
+    
+}
