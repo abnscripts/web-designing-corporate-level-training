@@ -1,7 +1,54 @@
 
-29/12/21
+12-02-2022
 ===================
-Javascript
+Javascript : to perform the client side operations
+
+
+DOM: document object model
+
+Windows
+	document
+        html
+        head, body>>other tags-div, p, span, table , form
+
+By using javascripts functions we can modify the html document.
+
+
+Types of javascripts
+
+   1. number 
+       var a; //declaration
+           a =100; //initialization
+       var b = 50;// declaration with initialization
+       var name = "vijay";
+       const mobile=9878787678;
+
+   2 String
+        var name="Vijay";
+
+   3 boolean
+        var areYouGraduated=true;
+        var flag=false;
+        var c=true;
+
+
+
+   4 Object: json
+
+          {
+          
+           }
+
+
+   
+       
+
+
+
+
+
+
+
 
 //variable delcaration with initailization
 

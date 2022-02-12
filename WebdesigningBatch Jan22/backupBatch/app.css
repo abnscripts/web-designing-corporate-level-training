@@ -23,3 +23,12 @@ p{color: greenyellow !important;}
     border-radius: 20px;
     
 }
+
+div span{  
+  color: red;  
+}
+
+
+div >span{
+  color: blue !important;
+}
