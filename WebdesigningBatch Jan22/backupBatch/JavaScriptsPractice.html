@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>JavaScript Practice</title>
+    <link rel="stylesheet" href="profile.css" />
     <script>
       var a = 100;
       var b = 20;
@@ -27,18 +28,52 @@
       console.log("Value of m " + m);
       var mul = a * d;
       console.log(" multiplication of a and d : " + mul);
-      var employeeDetails = {
-        firstName: "Vijay",
-        lastName: "Nimkarde",
-        Mobile: 9878775779,
-        email: "nimkardevijay@gmail.com",
-        address: "Chinchwad",
-        city: "Pune",
-      };
-      console.log("firstName: " + employeeDetails.firstName);
+
+      function showDetails(name, mobile) {
+        //alert("Hi " + name + " my number is " + mobile);
+      }
+      showDetails("Namrata", 98786787878);
+
+      function showProfile() {
+        var employeeDetails = {
+          firstName: "Vijay",
+          lastName: "Nimkarde",
+          Mobile: 9878775779,
+          email: "nimkardevijay@gmail.com",
+          address: "Chinchwad",
+          city: "Pune",
+        };
+        console.log("firstName: " + employeeDetails.firstName);
+        console.log("inside showProfile function");
+        document.getElementById("editProfile").style.display = "block";
+        document.getElementById("firstName").value = employeeDetails.firstName;
+        document.getElementById("lastName").value = employeeDetails.lastName;
+      }
+
+      function hideProfile() {
+        //once I click on hideProfile button
+        document.getElementById("editProfile").style.display = "none";
+      }
     </script>
   </head>
   <body>
     <h1>JavaScript Practice</h1>
+    <button onclick="showProfile()">View Profile</button>
+    <div id="editProfile">
+      <form>
+        <div class="inptutCtrl">
+          <label>First Name</label>
+          <input id="firstName" name="firstName" type="text" value="" />
+        </div>
+        <div class="inptutCtrl">
+          <label>Last Name</label>
+          <input id="lastName" name="lastName" type="text" value="" />
+        </div>
+        <div>
+          <input type="submit" />
+        </div>
+        <button onclick="hideProfile()">Hide Profile</button>
+      </form>
+    </div>
   </body>
 </html>

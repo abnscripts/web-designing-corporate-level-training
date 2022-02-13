@@ -1,0 +1,8 @@
+body{background-color: wheat;
+}
+#editProfile{
+    border: 1px solid green;
+    width: 30%;
+    display: none;
+}
+.inptutCtrl, button{ margin-top: 5px;}

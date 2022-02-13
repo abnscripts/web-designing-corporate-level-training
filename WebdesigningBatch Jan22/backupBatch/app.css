@@ -11,7 +11,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     font-family: "Lucida Console", "Courier New", monospace;
-   
+   height: auto;
   }
 p{color: greenyellow !important;}
 #abcd{
@@ -31,4 +31,12 @@ div span{
 
 div >span{
   color: blue !important;
+}
+.vmenu{
+  padding: 5px;
+  border: 1px solid red;
+}
+.hmenu{
+  padding: 5px;
+  border: 1px solid red;
 }

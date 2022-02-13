@@ -34,10 +34,16 @@ Types of javascripts
 
 
    4 Object: json
+       if you want to add multiple items with key : value pair then use json object
 
-          {
-          
-           }
+       var employeeDetails = {
+                               "firstName":"Vijay",
+                               "lastName": "Nimkarde",
+				"Mobile":9878775779,
+   				"email": "nimkardevijay@gmail.com",
+ 				"address": "Chinchwad",
+                                "city" : "Pune"
+                              }
 
 
    
