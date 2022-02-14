@@ -1,10 +1,67 @@
 
-12-02-2022
+14-02-2022
 ===================
-Javascript : to perform the client side operations
+html: use to create the elements..div, form
+css:look feel, to make the webpage attractive
 
-
+Javascript : 
+use to perform the client side operations
 DOM: document object model
+     
+DOM modification
+===================
+72% react facebook
+
+3 years -20L
+
+--------------------
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===================
 
 Windows
 	document

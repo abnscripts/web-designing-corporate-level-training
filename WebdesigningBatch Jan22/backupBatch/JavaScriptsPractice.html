@@ -38,16 +38,19 @@
         var employeeDetails = {
           firstName: "Vijay",
           lastName: "Nimkarde",
-          Mobile: 9878775779,
+          mobile: 9878775779,
           email: "nimkardevijay@gmail.com",
           address: "Chinchwad",
           city: "Pune",
         };
+
+        document.getElementById("editProfile").style.display = "block";
         console.log("firstName: " + employeeDetails.firstName);
         console.log("inside showProfile function");
-        document.getElementById("editProfile").style.display = "block";
+
         document.getElementById("firstName").value = employeeDetails.firstName;
         document.getElementById("lastName").value = employeeDetails.lastName;
+        document.getElementById("mobile").value = employeeDetails.mobile;
       }
 
       function hideProfile() {
@@ -68,6 +71,10 @@
         <div class="inptutCtrl">
           <label>Last Name</label>
           <input id="lastName" name="lastName" type="text" value="" />
+        </div>
+        <div class="inptutCtrl">
+          <label>mobile</label>
+          <input id="mobile" name="mobile" type="text" value="" />
         </div>
         <div>
           <input type="submit" />

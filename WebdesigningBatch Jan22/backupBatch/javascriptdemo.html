@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Practice</title>
+    <link rel="stylesheet" href="profile.css" />
+    <script>
+      var a = 10;
+      var b = 5;
+      var name = "Anju";
+      var areYouGraduated = true;
+
+      var user = {
+        name: "Vijay",
+        mobile: 97876757666,
+        designation: "Technical Lead",
+      };
+
+      console.log(user.mobile);
+
+      var userGrid = [
+        {
+          name: "Vijay",
+          mobile: 97876757666,
+          designation: "Technical Lead",
+        },
+        {
+          name: "Anju",
+          mobile: 98789089,
+          designation: "Web Developer",
+        },
+        {
+          name: "Ajay",
+          mobile: 97876757666,
+          designation: "Software Engineer",
+        },
+        {
+          name: "Rohit",
+          mobile: 97876757666,
+          designation: " Lead",
+        },
+        {
+          name: "Raju",
+          mobile: 97876757666,
+          designation: "Senior Developer",
+        },
+      ];
+      //console.log("user details : " + JSON.stringify(user));
+
+      console.log("Value of a is : " + a);
+      console.log("Value of b is : " + b);
+      console.log("my name is " + name);
+      //var sum = a + d; //error
+      var sum = a + b;
+      console.log(sum);
+      console.error("some error kjjjkk");
+      console.warn("some warning is here");
+      //console.clear();
+      //alert("this code wil(l not execute because if there is a error at the line number 19");
+    </script>
+    <script type="text/javascript" src="javascripts/app.js"></script>
+  </head>
+  <body>
+    <h1>JavaScript Training at ABNScripts</h1>
+
+    <span>Sum : a+b = 10+5</span>
+    <div><label> Sum : </label><input type="text" name="sum" id="sum" /></div>
+
+    <div>
+      <table border="1px">
+        <tr>
+          <th>name</th>
+          <th>mobile</th>
+          <th>designation</th>
+        </tr>
+
+        <script>
+          //document.write(sum);
+          document.getElementById("sum").value = sum;
+          for (let i = 0; i < userGrid.length; i++) {
+            console.log(i);
+            document.write(
+              "<tr><td>" +
+                userGrid[i].name +
+                "</td><td>" +
+                userGrid[i].mobile +
+                "</td><td>" +
+                userGrid[i].designation +
+                "</td></tr>"
+            );
+          }
+        </script>
+      </table>
+    </div>
+  </body>
+</html>
