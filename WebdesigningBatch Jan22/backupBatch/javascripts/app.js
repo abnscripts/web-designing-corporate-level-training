@@ -61,7 +61,7 @@ if ((num3 = 300)) {
   alert("wrong");
 }
 
-let markss = undefined;
+let markss;
 
 if (markss) {
   alert("success marks");
