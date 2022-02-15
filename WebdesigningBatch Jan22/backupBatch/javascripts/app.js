@@ -61,13 +61,13 @@ if ((num3 = 300)) {
   alert("wrong");
 }
 
-let markss = "";
+let markss = undefined;
 
 if (markss) {
   alert("success marks");
 }
 
-let markss = 100;
+markss = 100;
 
 if (markss) {
   // handle null pointer exception in javascripts
