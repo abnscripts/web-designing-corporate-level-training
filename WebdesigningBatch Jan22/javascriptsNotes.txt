@@ -1,6 +1,7 @@
 
 14-02-2022
 ===================
+Introduction:
 html: use to create the elements..div, form
 css:look feel, to make the webpage attractive
 
@@ -15,63 +16,23 @@ DOM modification
 3 years -20L
 
 --------------------
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-===================
-
 Windows
 	document
         html
         head, body>>other tags-div, p, span, table , form
 
 By using javascripts functions we can modify the html document.
+//1.print or console apis
+    
+    alert();
+    console.log()
+    console.warn()
+    console.error()
 
+//2.datatypes in javascript
 
-Types of javascripts
+in other language
+   int a=10;
 
    1. number 
        var a; //declaration
@@ -88,8 +49,6 @@ Types of javascripts
         var flag=false;
         var c=true;
 
-
-
    4 Object: json
        if you want to add multiple items with key : value pair then use json object
 
@@ -103,37 +62,103 @@ Types of javascripts
                               }
 
 
-   
-       
+   5. undefined
 
+   6. null 
 
+  7.bigint
 
+//databinding
+ let employeeDetails = 
+   {
+          firstName: "Vijay",
+          lastName: "Nimkarde",
+          mobile: 9878775779,
+          email: "nimkardevijay@gmail.com",
+          address: "Chinchwad",
+          city: "Pune",
+    };
 
+document.getElementById("firstName").value=employeeDetails.firstName;
+
+//Array: is collection of elements
+
+   let myArr=[2,5,1,56,78,89];
+   let myStrArr=["vijay", "rushi", "Sagar"];
 
 
 
 
 //variable delcaration with initailization
 
-  let fname = document.getElementById("txtFirstName").value;
-  let lname= document.getElementById("lname").value;
+  let fname = "Vijay";
+  var fname="vijay";
+  const fname="Vijay";
 
 
-Javascript events:
+//arithmetic operators
+   +, -, *,/
+
+//logical operators
+
+//logical operators
+//equal to  =  called as assingment operators
+//Less Than : <
+//less than equal  :  <=
+//greater than >
+//greator than equal to  : >=
+// equal equals to  ==
+
+ if variable value is null or undefined or "" then 
+     if condition will always false
+ 
+if(abcd){
+ //perform operations on abcd;
+}
+
+go to the next line code
+
+
+
+//Difference between let var and const
+
+//loops and conditions
+
+
+//Javascript events:
 
 =====================
- 
+key events:
 
 onblur: once mouse focus got changed
 
 onchange: if value of element got changed
 
+ondblclick
+
 onclick: once click on button
+
+onsubmit
 
 onselect: once select the value of dropdown
 
+Keyevents
+==========
+
 
 =============================================
+
+//prototypes
+
+
+//ecma6 features
+
+//array
+
+//array functions
+
+
+
 
 
 

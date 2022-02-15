@@ -48,8 +48,10 @@
         console.log("firstName: " + employeeDetails.firstName);
         console.log("inside showProfile function");
 
-        document.getElementById("firstName").value = employeeDetails.firstName;
+        document.getElementById("firstName").value = employeeDetails.firstName; //databinding
+
         document.getElementById("lastName").value = employeeDetails.lastName;
+
         document.getElementById("mobile").value = employeeDetails.mobile;
       }
 
@@ -66,7 +68,7 @@
       <form>
         <div class="inptutCtrl">
           <label>First Name</label>
-          <input id="firstName" name="firstName" type="text" value="" />
+          <input id="firstName" name="firstName" type="text" />
         </div>
         <div class="inptutCtrl">
           <label>Last Name</label>
