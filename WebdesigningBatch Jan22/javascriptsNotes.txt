@@ -108,6 +108,7 @@ document.getElementById("firstName").value=employeeDetails.firstName;
 //greater than >
 //greator than equal to  : >=
 // equal equals to  ==
+//not equal to !=
 
  if variable value is null or undefined or "" then 
      if condition will always false
@@ -116,24 +117,32 @@ if(abcd){
  //perform operations on abcd;
 }
 
+Debugging:
+F10: 
 go to the next line code
 
-
-
-//Difference between let var and const
-
-//loops and conditions
+F8: next breakpoint
 
 
 //Javascript events:
 
 =====================
 key events:
-
+===========
 onblur: once mouse focus got changed
 
 onchange: if value of element got changed
 
+onkeypress:
+
+onkeydown:
+
+
+
+
+
+mouse events
+==========
 ondblclick
 
 onclick: once click on button
@@ -142,14 +151,26 @@ onsubmit
 
 onselect: once select the value of dropdown
 
-Keyevents
-==========
-
+onmouseenter
+onmousemove
+onmouseout
+onmouseleave
+onmousewheel
+onclick
+ondblclick
 
 =============================================
 
-//prototypes
+//Difference between let,var and const
 
+//loops and conditions
+   if
+   for
+-----------
+   while , do while, 
+
+
+//prototypes
 
 //ecma6 features
 

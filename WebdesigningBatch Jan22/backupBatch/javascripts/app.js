@@ -16,7 +16,7 @@ for (let i = 0; i < myStrArr.length; i++) {
   }
 }
 
-let ages = [20, 5, 10, 25, 80, 18, 40, 12, 13, 30, 7, 8];
+let ages = [20, 5, 10, 25, 80, 18, 40, 12, 13, 30, 7, 8]; //0-11
 
 //print ages greater than 18 : condition: age >= 18
 
@@ -27,6 +27,9 @@ let ages = [20, 5, 10, 25, 80, 18, 40, 12, 13, 30, 7, 8];
 for (let i = 0; i < ages.length; i++) {
   if (ages[i] >= 18) {
     console.log(ages[i] + " = he/she is adult");
+  } else if (ages[i] >= 10 && ages[i] < 18) {
+    //10-18
+    console.log(ages[i] + " = he/she is younger");
   } else {
     console.log(ages[i] + " = he/she is a kid");
   }
@@ -56,7 +59,7 @@ console.log("Division " + num1 / num2);
 //let num3=300;//assignment operator example
 
 if ((num3 = 300)) {
-  alert("success");
+  // alert("success");
 } else {
   alert("wrong");
 }
@@ -64,20 +67,34 @@ if ((num3 = 300)) {
 let markss;
 
 if (markss) {
-  alert("success marks");
+  //alert("success marks");
 }
 
 markss = 100;
 
 if (markss) {
   // handle null pointer exception in javascripts
-  alert("success marks");
+  // alert("success marks");
 }
 
 let abcd = undefined;
 
 if (abcd) {
-  alert("abcd is haviing some value");
+  //alert("abcd is haviing some value");
 } else {
-  alert("abcd is undefined ");
+  //alert("abcd is undefined ");
+}
+
+//===========================
+//common function for all events
+
+function test(abcd) {
+  alert("this is a " + abcd);
+}
+function test1(mobileNo) {
+  if (mobileNo.length < 10) {
+    console.log("Please enter 10 digit mobile number"); // validations
+  } else {
+    alert("You are good...!!");
+  }
 }

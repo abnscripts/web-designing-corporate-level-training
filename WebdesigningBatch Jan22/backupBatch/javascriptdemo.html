@@ -90,6 +90,61 @@
           }
         </script>
       </table>
+      <hr />
+      <h3>Key Events</h3>
+      <div>
+        <label>Onblur : </label><input type="text" onblur="test1(this.value)" />
+      </div>
+      <div style="margin-top: 10px">
+        <label>onkeypress : </label
+        ><input type="text" onkeypress="test('onkeypress')" />
+      </div>
+      <div style="margin-top: 10px">
+        <label>onkeyup : </label
+        ><input type="text" onkeyup="test1(this.value)" />
+      </div>
+      <div style="margin-top: 10px">
+        <label>onkeydown : </label
+        ><input type="text" onkeydown="test('onkeydown')" />
+      </div>
+      <hr />
+      <h3>Mouse Events</h3>
+
+      <div style="margin-top: 10px">
+        <label>onmouseenter : </label
+        ><input type="text" onmouseenter="test('onmouseenter')" />
+      </div>
+
+      <div style="margin-top: 10px">
+        <label>onmousemove : </label
+        ><input type="text" onmousemove="test('onmousemove')" />
+      </div>
+      <div style="margin-top: 10px">
+        <label>onmousedown : </label
+        ><input type="text" onmousedown="test('onmousemove')" />
+      </div>
+      <div style="margin-top: 10px">
+        <label>onmouseout : </label
+        ><input type="text" onmouseout="test('onmouseout')" />
+      </div>
+      <div style="margin-top: 10px">
+        <label>onmouseleave : </label
+        ><input type="text" onmouseleave="test('onmouseleave')" />
+      </div>
+      <div style="margin-top: 10px">
+        <label>onmousewheel : </label
+        ><input type="text" onmousewheel="test('onmousewheel')" />
+      </div>
+      <div style="margin-top: 10px">
+        <label>onclick : </label
+        ><button type="text" onclick="test('onclick')">Single Click</button>
+      </div>
+      <div style="margin-top: 10px">
+        <label>ondblclick : </label
+        ><button type="text" ondblclick="test('ondblclick')">
+          Double Click
+        </button>
+      </div>
     </div>
   </body>
 </html>
