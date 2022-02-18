@@ -137,10 +137,6 @@ onkeypress:
 
 onkeydown:
 
-
-
-
-
 mouse events
 ==========
 ondblclick
@@ -161,11 +157,25 @@ ondblclick
 
 =============================================
 
-//Difference between let,var and const
+//Difference between var,let and const
+  
+
+
 
 //loops and conditions
    if
    for
+example :
+ let myarr = [10,23,30,11,40,50,60,7,5,3,67];
+ for(let i=0;i<myarr.length;i++){
+   if(myarr[i]%2==0){
+      console.log("even number");     
+      console.log(myarr[i]);
+   }else{
+       console.log("odd numbers");
+	console.log(myarr[i]);
+    }
+ }
 -----------
    while , do while, 
 

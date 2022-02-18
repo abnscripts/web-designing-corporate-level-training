@@ -98,3 +98,68 @@ function test1(mobileNo) {
     alert("You are good...!!");
   }
 }
+
+let myarr = [10, 23, 30, 11, 40, 50, 60, 7, 5, 3, 67];
+for (let i = 0; i < myarr.length; i++) {
+  if (myarr[i] % 2 == 0) {
+    console.log("even number");
+    console.log(myarr[i]);
+  } else {
+    console.log("odd numbers");
+    console.log(myarr[i]);
+  }
+}
+//difference var, let , const
+/*
+  
+Var: A variable declared with var is having global scope inside the script file/html file
+
+let : is a block level element
+ 
+const : we can not change the value of constant variable
+
+*/
+
+//console.clear();
+
+var fan = "Orient";
+let isSwitchIsOn; //declaration defines the scope of variable
+isSwitchIsOn = true; //initialization
+const mymobile = 988777776666;
+//var a=10;
+function rotate() {
+  var isSwitchIsOn; //let/var declaration inside the function
+  //isSwitchIsOn = true; //initialization
+  if (isSwitchIsOn) {
+    console.log(fan + " Fan is rotating");
+  }
+  isSwitchIsOn = false;
+}
+
+rotate();
+
+mymobile = 987878767;
+
+console.log("is switch is on ? middle of any code. " + isSwitchIsOn);
+function stop() {
+  console.log("is switch is on ? inside stop()" + isSwitchIsOn);
+  isSwitchIsOn = true;
+  if (10 > 5) {
+    var lastNm = "Nimkarde"; //try with let
+    console.log("inside if condition value of lastNm variable :" + lastNm);
+  }
+  console.log(
+    " outside the above if condition value of lastNm variable :" + lastNm
+  );
+}
+stop();
+console.log("is switch is on? outside stop() " + isSwitchIsOn);
+console.log(fan);
+
+//===========================
+
+if (true) {
+  var myname = "vijay";
+  console.log("inside : my name is " + myname);
+}
+console.log("outside : my name is " + myname);
