@@ -100,6 +100,9 @@ function test1(mobileNo) {
 }
 
 let myarr = [10, 23, 30, 11, 40, 50, 60, 7, 5, 3, 67];
+
+console.log("using normal for loop");
+
 for (let i = 0; i < myarr.length; i++) {
   if (myarr[i] % 2 == 0) {
     console.log("even number");
@@ -109,6 +112,59 @@ for (let i = 0; i < myarr.length; i++) {
     console.log(myarr[i]);
   }
 }
+//forEach
+console.log("using forEach");
+myarr.forEach(function (element) {
+  if (element % 2 == 0) {
+    console.log("even number");
+    console.log(element);
+  } else {
+    console.log("odd numbers");
+    console.log(element);
+  }
+});
+
+console.log("using for ... of");
+
+for (let member of myarr) {
+  console.log(member);
+}
+
+console.log("ABNers");
+let ABNers = ["rushi", "anju", "namrata", "sagar", "siddhesh"];
+
+for (let teamMember of ABNers) {
+  //if (teamMember == "sagar") {
+  console.log(teamMember);
+  //}
+}
+
+//while loop 2 mins,
+
+console.log("using while loop");
+
+//for(let j=0;j<myarr.length;j++): convert into while loop
+//while loop
+var numarr = [30, 20, 23];
+let k = 0;
+while (k < numarr.length) {
+  console.log("elementssssss " + numarr[k]); //logic
+  k++;
+}
+
+//do....while
+
+console.log("do while ");
+let text = "";
+let p = 0;
+
+do {
+  text = "The number is " + p;
+  console.log(text);
+  p++;
+} while (p < 10);
+
+console.log("======================================");
 //difference var, let , const
 /*
   
@@ -138,7 +194,7 @@ function rotate() {
 
 rotate();
 
-mymobile = 987878767;
+//mymobile = 987878767;
 
 console.log("is switch is on ? middle of any code. " + isSwitchIsOn);
 function stop() {
