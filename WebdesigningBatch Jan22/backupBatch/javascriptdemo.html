@@ -17,31 +17,40 @@
 
       console.log(user.mobile);
 
+      var sal50k = []; // give me list of employees/users whose salary greator than or equals to
+
+      // 50000
+
       var userGrid = [
         {
           name: "Vijay",
           mobile: 97876757666,
           designation: "Technical Lead",
+          salary: 50000,
         },
         {
           name: "Anju",
           mobile: 98789089,
           designation: "Web Developer",
+          salary: 60000,
         },
         {
           name: "Ajay",
           mobile: 97876757666,
           designation: "Software Engineer",
+          salary: 40000,
         },
         {
           name: "Rohit",
           mobile: 97876757666,
           designation: " Lead",
+          salary: 70000,
         },
         {
           name: "Raju",
           mobile: 97876757666,
           designation: "Senior Developer",
+          salary: 49000,
         },
       ];
       //console.log("user details : " + JSON.stringify(user));
@@ -71,6 +80,7 @@
           <th>name</th>
           <th>mobile</th>
           <th>designation</th>
+          <th>salary</th>
         </tr>
 
         <script>
@@ -78,15 +88,22 @@
           document.getElementById("sum").value = sum;
           for (let i = 0; i < userGrid.length; i++) {
             // console.log(i);
-            document.write(
-              "<tr><td>" +
-                userGrid[i].name +
-                "</td><td>" +
-                userGrid[i].mobile +
-                "</td><td>" +
-                userGrid[i].designation +
-                "</td></tr>"
-            );
+
+            if (userGrid[i].salary >= 50000) {
+              document.write(
+                "<tr><td>" +
+                  userGrid[i].name +
+                  "</td><td>" +
+                  userGrid[i].mobile +
+                  "</td><td>" +
+                  userGrid[i].designation +
+                  "</td>" +
+                  "<td>" +
+                  userGrid[i].salary +
+                  "</td>" +
+                  "</tr>"
+              );
+            }
           }
         </script>
       </table>

@@ -164,11 +164,15 @@ done
 //loops and conditions
    if
    for
+   forEach
+  for ..of
 
 example :
 
  let myarr = [10,23,30,11,40,50,60,7,5,3,67];
+
  for(let i=0;i<myarr.length;i++){
+
    if(myarr[i]%2==0){
       console.log("even number");     
       console.log(myarr[i]);
@@ -180,15 +184,25 @@ example :
 -----------
    while , do while, 
 
+  switch 
+
+--------------------------
+//array
+
+---done----till this
+
+//array functions/methods
+
+   length() : get the length of array
+   
+
+practice on w3cshool
 
 //prototypes
 
-//ecma6 features
+//ecma6/ecma 2015 features
 
-//array
-
-//array functions
-
+ 
 //css selectors
 
 

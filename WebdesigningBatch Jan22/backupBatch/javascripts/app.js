@@ -152,7 +152,7 @@ while (k < numarr.length) {
   k++;
 }
 
-//do....while
+//do....while: this loop will execute at least once even condition is false
 
 console.log("do while ");
 let text = "";
@@ -219,3 +219,74 @@ if (true) {
   console.log("inside : my name is " + myname);
 }
 console.log("outside : my name is " + myname);
+
+//Switch case: if we want to execute different logic on the basis of different case/condition
+
+let age = 20;
+
+switch (age) {
+  case 5:
+    console.log("hi,you are kid");
+    break;
+  case 10:
+    console.log("hi,you are YOUNGER");
+    break;
+  case 20:
+    console.log("hi,you are AUDULT");
+    var counts = 0;
+    for (let i = 0; i <= 6; i++) {
+      counts = counts + i;
+      /*         0 + 0=0
+                 0 + 1=1
+                 1 + 2=3
+                 3 + 3=6
+                 6 + 4=10
+                 10 + 5 = 15
+                 15 + 6 =21
+
+
+      */
+    }
+    console.log("count : " + counts);
+    break;
+
+  default:
+    break;
+}
+
+let ag = 10;
+
+switch (ag != null) {
+  case ag < 10:
+    console.log("hi,you are kid");
+    break;
+  case ag > 18:
+    console.log("hi,you are YOUNGER");
+    break;
+  case ag >= 18:
+    console.log("hi,you are AUDULT");
+    break;
+
+  default:
+    console.log("this will execute if all cases are false");
+    break;
+}
+
+let a1 = 10;
+let b1 = 20;
+
+switch (a1 + b1) {
+  case 10:
+    console.log("addition is 10");
+    break;
+  case 20:
+    console.log("addition is 20");
+    break;
+  case 30:
+    console.log("addition is 30");
+    break;
+
+  default:
+    console.log("this will execute if all cases are false");
+    break;
+}
