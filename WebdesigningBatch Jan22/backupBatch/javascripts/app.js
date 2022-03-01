@@ -290,3 +290,59 @@ switch (a1 + b1) {
     console.log("this will execute if all cases are false");
     break;
 }
+
+//4. prototype
+//prototype is main object of javascript which is use to add properties and functions
+
+// Create a Student class using prototype :
+//for example
+
+function Student() {
+  this.firstName = "Vijay";
+  this.gender = "M";
+}
+Student.prototype.lastName = "Nimkarde";
+Student.prototype.age = 15;
+
+var s = new Student();
+Student.prototype.getAge = function getAge() {
+  console.log("Stuent Age: " + s.age);
+};
+s.getAge();
+Student.prototype.getName = function getName() {
+  console.log("Student Name :" + s.firstName + " " + s.lastName);
+};
+s.getName();
+
+//arrays-sort method
+//sort string array
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();
+console.log("Sorted Fruits : " + fruits);
+//sort number array
+let numberArr = [3, , 90, 20, 2, 6, 8, 7, 10, 100, 150, 120];
+
+/*let sortedNumbers = numberArr.sort(function (a, b) {
+  return a - b;
+});*/
+
+//another way
+let sortedNumbers = numberArr.sort(compareFunction);
+
+//asceding
+function compareFunction(a, b) {
+  return a - b;
+}
+//desceding
+/*
+function compareFunction(a, b) {
+  return b-a;
+}*/
+
+console.log("Sorted numbers : " + sortedNumbers);
+
+//set: A JavaScript Set is a collection of unique values.
+//ref https://www.w3schools.com/js/js_object_sets.asp
+
+//map
+//https://www.w3schools.com/js/js_object_maps.asp

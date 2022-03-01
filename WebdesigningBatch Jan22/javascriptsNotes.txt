@@ -195,19 +195,31 @@ example :
 
    length() : get the length of array
    
+   sort()
 
 practice on w3cshool
 
 //prototypes
 
-//ecma6/ecma 2015 features
+  Prototype is main object inside the javascript.
+ By using prototype we can add a variable or new method.
 
+ let vehicle={   
+                 name: car,
+		 color : red
+             }
+
+using prototype then we create a object
+
+//set/map
  
 //css selectors
 
+//ecma6/ecma 2015 features
+
+//setTimeout and setIntraval
 
 //closur
-
 
 //design pattern
 
