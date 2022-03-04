@@ -213,11 +213,20 @@ using prototype then we create a object
 
 //set/map
  
+//map
+
+
+//setTimeout/setInterval/clearInterval
+
+var myinterval =setTimeout(function(){
+  alert("Hi Team");  
+},5000);
+
+1000 ms = 1 sec
+
 //css selectors
 
 //ecma6/ecma 2015 features
-
-//setTimeout and setIntraval
 
 //closur
 

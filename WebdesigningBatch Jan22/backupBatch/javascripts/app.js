@@ -346,3 +346,29 @@ console.log("Sorted numbers : " + sortedNumbers);
 
 //map
 //https://www.w3schools.com/js/js_object_maps.asp
+
+//setTimeout/setInterval/clearInterval
+let abc = 10;
+var myinterval = setTimeout(function () {
+  alert("Hi Team: " + abc);
+}, 5000);
+
+//1000 ms = 1 sec
+
+//another way
+
+//let tempdfd = 10;
+var test = function () {
+  let c = 100 + 150;
+  alert("Sum : " + c + "great!! business logic executed");
+};
+
+var myintervals = setTimeout(test, 5000);
+
+var intrl = setInterval(function () {
+  console.log("this code will executed every 2 seconds");
+}, 2000);
+
+setTimeout(function () {
+  clearInterval(intrl);
+}, 21000);
