@@ -374,7 +374,7 @@ setTimeout(function () {
 }, 21000);
 
 //closure
-
+//example 1
 function carIsRunning() {
   let state = "Running";
   function carState() {
