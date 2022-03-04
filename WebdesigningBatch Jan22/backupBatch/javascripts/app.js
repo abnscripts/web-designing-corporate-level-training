@@ -372,3 +372,32 @@ var intrl = setInterval(function () {
 setTimeout(function () {
   clearInterval(intrl);
 }, 21000);
+
+//closure
+
+function carIsRunning() {
+  let state = "Running";
+  function carState() {
+    console.log(state);
+  }
+  return carState;
+}
+let runState = carIsRunning();
+console.log(runState);
+runState();
+
+//example 2
+function greeting(message) {
+  return function (name) {
+    return message + " " + name;
+  };
+}
+let sayHi = greeting("Hi");
+let sayHello = greeting("Hello");
+
+console.log(sayHi);
+
+console.log(sayHi("Rushikesh")); // Hi John
+console.log(sayHello("Sagar")); // Hello John
+
+//ref : https://www.javascripttutorial.net/javascript-closure/#:~:text=In%20JavaScript%2C%20a%20closure%20is,the%20lexical%20scoping%20works%20first.
