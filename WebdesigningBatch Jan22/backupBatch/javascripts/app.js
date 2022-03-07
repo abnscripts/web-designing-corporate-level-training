@@ -401,3 +401,25 @@ console.log(sayHi("Rushikesh")); // Hi John
 console.log(sayHello("Sagar")); // Hello John
 
 //ref : https://www.javascripttutorial.net/javascript-closure/#:~:text=In%20JavaScript%2C%20a%20closure%20is,the%20lexical%20scoping%20works%20first.
+
+//css selector
+//1 ID selector
+//example
+document.getElementById("firstName").style.color = "red";
+
+//jquery
+// $("#firstName").css("color","red");
+
+//2. Class Selector
+document.getElementsByClassName("ABNHEAD")[0].style.color = "red";
+
+//3 Name Selector
+document.getElementsByName("lastName")[0].style.borderColor = "red";
+document.getElementsByName("lastName")[0].style.backgroundColor = "yellow";
+
+//4. TagName selector
+document.getElementsByTagName("Label")[8].style.color = "blue";
+
+//Task : using tagName selector apply color=Blue to all form elements on registration form
+//use forEach loop
+//practice other css properties show some examples
