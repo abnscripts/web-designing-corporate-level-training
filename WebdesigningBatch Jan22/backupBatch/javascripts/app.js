@@ -421,5 +421,87 @@ document.getElementsByName("lastName")[0].style.backgroundColor = "yellow";
 document.getElementsByTagName("Label")[8].style.color = "blue";
 
 //Task : using tagName selector apply color=Blue to all form elements on registration form
-//use forEach loop
+//use for loop
 //practice other css properties show some examples
+let tagObject = document.getElementsByTagName("Label");
+
+for (let index = 0; index < tagObject.length; index++) {
+  const element = tagObject[index];
+  element.style.color = "blue";
+}
+//ES6 Features
+/*
+The let keyword = Done
+The const keyword =Done
+For/of : done
+Map Objects : Done
+Set Objects : Done
+
+Arrow Functions
+Classes
+Promises
+
+CallBack function
+Default Parameters
+Function Rest Parameter
+String.includes()
+String.startsWith()
+String.endsWith()
+Array.from()
+Array keys()
+Array find()
+Array findIndex()
+New Math Methods
+New Number Properties
+New Number Methods
+New Global Methods
+Object entries
+JavaScript Modules
+https://www.w3schools.com/js/js_es6.asp
+*/
+//onGoing project till Friday
+//few other pages like aboutUs, services,
+//login.html ,registration popup
+/*
+if(usernmae="sagar" && pass="sagar123"){
+  location.href="home.html";
+}else{
+  alert("you are not authorized user");
+}*/
+//Home page
+//Edit profile- set EmployeeObject={key=value}
+//once user login redirect to home page
+
+//arrow function
+// ES5
+var myFunc = function (x, y) {
+  return x * y;
+};
+
+//if single line code
+const x = (x, y) => x * y; //()=anonymous function
+x(10, 5);
+
+//more lines
+const z = (x, y) => {
+  let sum = x + y;
+  return sum;
+};
+//output50
+//Promise
+//if success
+const myPromise = new Promise(function (success, error) {
+  success("Classroom is open!!");
+});
+
+myPromise.then(function (value) {
+  console.log(value);
+});
+
+//if erorr
+
+const myPromises = new Promise(function (success, error) {
+  error("Classroom is closed !!");
+});
+myPromises.catch();
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise

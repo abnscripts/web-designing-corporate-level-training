@@ -228,6 +228,11 @@ var myinterval =setTimeout(function(){
 
 //css selectors
 
+  id selector
+  class selector
+  names selector
+
+
 //ecma6/ecma 2015 features
 
 //design pattern
