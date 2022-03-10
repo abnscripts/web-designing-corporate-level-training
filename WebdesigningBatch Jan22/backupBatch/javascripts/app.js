@@ -459,21 +459,13 @@ Object entries
 JavaScript Modules
 https://www.w3schools.com/js/js_es6.asp
 */
-//onGoing project till Friday
-//few other pages like aboutUs, services,
-//login.html ,registration popup
-/*
-if(usernmae="sagar" && pass="sagar123"){
-  location.href="home.html";
-}else{
-  alert("you are not authorized user");
-}*/
-//Home page
-//Edit profile- set EmployeeObject={key=value}
-//once user login redirect to home page
 
 //arrow function
 // ES5
+function myFunName(x, y) {
+  return x * y;
+}
+
 var myFunc = function (x, y) {
   return x * y;
 };
@@ -505,3 +497,49 @@ const myPromises = new Promise(function (success, error) {
 });
 myPromises.catch();
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+//Class
+
+class Car {
+  constructor(name, year) {
+    //input variable
+    //constructor is use to initialized the properties of the class-
+    // to initialize the object of class
+    this.carName = name; // local variable
+    this.year = year;
+  }
+  // 10 function
+  getCarName() {
+    console.log("Car Name is " + this.carName);
+  }
+  getCarYear() {
+    console.log("Year of " + this.carName + "is " + this.year);
+  }
+}
+
+const myCar1 = new Car("Ford", 2014);
+
+myCar1.getCarName();
+myCar1.getCarYear();
+
+const myCar2 = new Car("Audi", 2019);
+myCar2.getCarName();
+myCar2.getCarYear();
+
+//Task : Create a employee object and define some variables and methods like in Car class
+//getEmployeeSalary(), getEmployeeName(),getEmployeeMobileNumber()
+//let employeeJson={firstName:"asdfsad", lastName:"asdfsadf",salary:8978978, mobileNo:9878767789,eeptName:"IT" };
+//const employee = new Employee(employeeJson);
+
+//onGoing project till Friday
+//few other pages like aboutUs, services,
+//login.html ,registration popup
+/*
+if(usernmae="sagar" && pass="sagar123"){
+  location.href="home.html";
+}else{
+  alert("you are not authorized user");
+}*/
+//Home page
+//View Profile -- Edit profile- set EmployeeObject={key=value}
+//once user login redirect to home page.
