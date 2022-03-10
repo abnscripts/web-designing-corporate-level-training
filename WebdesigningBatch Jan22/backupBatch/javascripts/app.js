@@ -531,7 +531,7 @@ myCar2.getCarYear();
 //let employeeJson={firstName:"asdfsad", lastName:"asdfsadf",salary:8978978, mobileNo:9878767789,eeptName:"IT" };
 //const employee = new Employee(employeeJson);
 
-//onGoing project till Friday
+//onGoing project till Sunday
 //few other pages like aboutUs, services,
 //login.html ,registration popup
 /*
