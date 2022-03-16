@@ -5,7 +5,8 @@ showMessage();
 
 //array
 
-let myStrArr = ["vijay", "rushi", "Sagar", "Akash", "Namrata"];
+let myStrArr = ["vijay", "rushi", "Sagar", "Akash", "Namrata", "Vaibhav"];
+//5: 0---4
 console.log("length of myarray: " + myStrArr.length);
 for (let i = 0; i < myStrArr.length; i++) {
   if (myStrArr[i] == "Sagar") {
@@ -433,20 +434,19 @@ for (let index = 0; index < tagObject.length; index++) {
 /*
 The let keyword = Done
 The const keyword =Done
-For/of : done
+For/of : Done
 Map Objects : Done
 Set Objects : Done
 
-Arrow Functions
-Classes
-Promises
-
-CallBack function
-Default Parameters
-Function Rest Parameter
+Arrow Functions Done
+Classes : Done
+Promises : Done
 String.includes()
 String.startsWith()
 String.endsWith()
+CallBack function
+Default Parameters
+Function Rest Parameter
 Array.from()
 Array keys()
 Array find()
@@ -536,10 +536,106 @@ myCar2.getCarYear();
 //login.html ,registration popup
 /*
 if(usernmae="sagar" && pass="sagar123"){
-  location.href="home.html";
+  window.location.href="home.html";
 }else{
   alert("you are not authorized user");
 }*/
 //Home page
 //View Profile -- Edit profile- set EmployeeObject={key=value}
 //once user login redirect to home page.
+
+/*
+
+
+HTTP METHODS:
+--------------------
+ 1. GET ---->
+           use to get the data/records from server. DB: select query 
+
+ 2. POST---->
+           use to submit/update the data to the server
+          DB: insert query
+              
+ 3. PUT ---->
+           use to update the record /data on the server 
+          DB: update query
+
+ 4. DELETE -->
+          use to delete a record/data on the server
+          DB: delete query
+          
+  */
+
+//https://www.w3schools.com/js/js_es6.asp
+
+//Rest parameters
+function sum(...args) {
+  let sum = 0;
+  for (let arg of args) {
+    sum = sum + arg;
+  }
+  return sum;
+}
+let addn = sum(4, 9, 23, 16, 25, 29, 100, 66, 77, 100, 200);
+//text.includes
+
+if (text.includes("Vijay")) {
+  console.log("Matched");
+} else {
+  console.log("Not matched");
+}
+
+/*
+let texte = "Hello world, welcome to the universe.";
+
+texte.endsWith("se")
+false
+let texte = "Hello world, welcome to the universe.";
+
+texte.endsWith("se,")
+false
+let texte = "Hello world, welcome to the universe.";
+
+texte.endsWith("se.")
+*/
+
+//async will convert function into the promise
+
+function myDisplayer(some) {
+  alert(some);
+}
+
+async function myFunction() {
+  return "Hello";
+}
+
+myFunction().then(function (value) {
+  myDisplayer(value);
+});
+
+//Callback
+//Normal function calling:
+function myDisplayer(inputNumer) {
+  console.log(inputNumer);
+}
+
+function myCalculator(num1, num2) {
+  let sum = num1 + num2;
+  myDisplayer(sum);
+}
+
+myCalculator(5, 10);
+
+//Now using callback: pass the callBack Fucntion as a input parameter.
+
+function callMyFriend(inputNumer) {
+  console.log(inputNumer);
+}
+
+function myCalculator(num1, num2, myCallBackFunc) {
+  let sum = num1 + num2;
+  //Call my friend once I am done with the current task
+  myCallBackFunc(sum);
+}
+
+myCalculator(5, 10, callMyFriend);

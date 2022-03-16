@@ -235,7 +235,7 @@ var myinterval =setTimeout(function(){
 
 //ecma6/ecma 2015 features
 
-//design pattern
+
 
 
 
